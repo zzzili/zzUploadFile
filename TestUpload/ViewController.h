@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "zzUploadFile.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<zzUploadProcessDelegate>
+{
+}
+@property (strong, nonatomic) IBOutlet UILabel *mypros;
+- (IBAction)touch:(id)sender;
 @end
